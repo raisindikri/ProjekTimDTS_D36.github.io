@@ -237,29 +237,46 @@ height: 100px;
 }
 
 .lesson {
+  border-radius: 4px;
+  padding-top: 10px;
   float: left;
-  width: 25%;
+  width: 24.5%;
+  margin-right: 5px;
+  height: 360px;
+}
+
+.lesson .fa {
+  margin-top: 10px;
+  font-size: 72px;
 }
 
 .lesson-icon {
-  position: relative;
+  margin-bottom: 20px;
 }
 
 .lesson-icon p {
-  position: absolute;
-  top: 44%;
+  opacity: 0.7;
   width: 100%;
-  color: white;
+  top: 90px;
+  left: auto;
+  color: #535c68;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
-.txt-contents {
-  width: 80%;
-  display: inline-block;
-  margin-top: 15px;
+.text-lesson {
   font-size: 15px;
-  color: #b3aeb5;
+  width: 80%;
+  margin: auto;
+  color: rgb(44, 8, 94);
+  opacity: 0.6;
 }
 
+.lesson-icon img {
+  height: 50px;
+  width: 40%;
+}
 .heading h3 {
   font-weight: normal;
 }
@@ -346,13 +363,21 @@ footer {
   padding: 20px 0px;
   text-align: center;
 }
-
+.blog-list {
+  background-color: #5032a2;
+}
 .blog-list ul {
   list-style: none;
   margin: 0px;
-  padding: 20px 0px;
+  padding: 10px 0px;
   text-align: justify;
+  background-color: #0e0627;
 }
+.list1 {
+  background: rgb(130, 109, 165);
+}
+
+
 .li1 li {
   color: white;
   height: 80px;
@@ -375,6 +400,14 @@ footer {
   flex: auto;
 }
 
+span.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  display: none;
+}
+
 /* 
 @media screen and (min-width: 550px) {
   .card {
@@ -390,7 +423,7 @@ footer {
       margin: 0 10px;
     } */
 
-    @media (max-width: 670px) {
+    @media all and (max-width: 670px) {
 
       /* Tetapkan flex-direction milik .flex-list */
       .flex-list {
@@ -409,6 +442,20 @@ footer {
     .blog-list li {
       margin: 0 auto;
     }
+
+    .header-list {
+      display: none;
+    }
+    span.menu-icon {
+      display: block;
+    }
+
+    .head-card img {
+  width: 40%;
+  height: 150px;
+  margin-left: 100px;
+  /* object-fit: cover; */
+}
     }
 
     @media (max-width: 1000px) {
@@ -420,3 +467,5 @@ footer {
         width: 50%;
       }
     }
+
+    
