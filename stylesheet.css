@@ -82,13 +82,11 @@ li {
 }
 
 .rounded-image {
-  /* border-radius: 150px;
+  border-radius: 150px;
   -webkit-border-radius: 150px;
-  -moz-border-radius: 150px; */
+  -moz-border-radius: 150px;
  text-align: center;
  margin: 30px 30px;
- width: 100px;
- height: 100px;
 }
 
 .content-opinion {
@@ -320,9 +318,10 @@ footer {
 }
 
 .head-card img {
-  width: 80%;
+  width: 40%;
   height: 150px;
-  object-fit: cover;
+  margin-left: 100px;
+  /* object-fit: cover; */
 }
 
 .body-card {
@@ -348,6 +347,12 @@ footer {
   text-align: center;
 }
 
+.blog-list ul {
+  list-style: none;
+  margin: 0px;
+  padding: 20px 0px;
+  text-align: justify;
+}
 .li1 li {
   color: white;
   height: 80px;
@@ -361,6 +366,15 @@ footer {
 .flex-list li {
   flex: auto;
 }
+.blog-list {
+  display: flex;
+
+}
+
+.blog-list li {
+  flex: auto;
+}
+
 /* 
 @media screen and (min-width: 550px) {
   .card {
@@ -386,4 +400,23 @@ footer {
       /* Tetapkan margin dari .flex-list li ke 0 auto */
       .flex-list li {
         margin: 0 auto;
-      }}
+      }
+    .blog-list {
+      flex-direction: column;
+    }
+
+    /* Tetapkan margin dari .flex-list li ke 0 auto */
+    .blog-list li {
+      margin: 0 auto;
+    }
+    }
+
+    @media (max-width: 1000px) {
+      .blog-list {
+        flex-wrap: wrap;
+      }
+
+      .blog-list li {
+        width: 50%;
+      }
+    }
