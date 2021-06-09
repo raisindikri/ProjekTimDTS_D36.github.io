@@ -1,0 +1,286 @@
+/* Reset CSS (JANGAN DIHAPUS) */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Ketik code Anda dibawah */
+.container{
+  width: 1170px;
+  margin: auto;
+}
+/*TOP-WRAPPER*/
+.top-wrapper{
+  /* background-image: url("https://prog-8.com/images/html/advanced/top_en.png"); */
+  /* background-size: cover; */
+  display: grid;
+  padding: 160px 0 50px 0;
+  color: #2f3542;
+}
+
+.top-left{
+  width: 60%;
+  float: left;
+}
+
+.top-right{
+  width: 40%;
+  float: right;
+}
+
+.top-right img{
+  width: 100%;
+}
+
+.top-wrapper h1, .top-wrapper p, .signup p{
+  opacity: 0.7;
+}
+
+.top-heading h1{
+  text-transform: uppercase;
+  font-size: 32px;
+  letter-spacing: 5px;
+}
+
+.top-heading p{
+  font-size: 12px;
+  font-weight: 400;
+  text-align: justify;
+}
+
+.top-heading h1:nth-child(2){
+  color: #239b76;
+  margin-bottom: 20px;
+}
+
+.signup{
+  margin: 20px 0;
+}
+
+.btn{
+  padding: 12px 24px;
+  opacity: 0.8;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.15s;
+  color: #fff;
+}
+
+.btn:hover{
+  opacity: 1;
+}
+
+a.btn{
+  display: inline-block;
+}
+
+.email{
+  background-color: #239b76;
+}
+
+/*.facebook, .twitter{*/
+/*  margin-top: 10px;*/
+/*}*/
+
+/* .facebook{
+  background-color: #3b5998;
+  margin-right: 10px;
+}
+
+.twitter{
+  background-color: #55acee;
+} */
+
+/*HEADER*/
+
+header{
+  margin-top: 20px;
+  width: 100%;
+  /* background-color: rgba(34, 49, 52, 0.9); */
+  height: 65px;
+  position: fixed;
+  z-index: 10;
+  color: #535c68;
+}
+
+.header-left{
+  float: left;
+}
+
+.header-right{
+  float: right;
+}
+
+.header-right li{
+  list-style: none;
+  display: inline-block;
+}
+
+.header-right a{
+  line-height: 65px;
+  color: #535c68;
+  float: left;
+  margin-right: 40px;
+  transform: .5s;
+}
+
+.header-right a:hover{
+  font-weight: 500;
+  color: #5dca88;
+}
+
+img.logo{
+  float: left;
+  width: 80px;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+.logo-text{
+    text-transform: uppercase;
+    font-size: 18px;
+    float: left;
+    line-height: 65px;
+    font-weight: 600;
+}
+
+
+/*LESSONS*/
+.lessons-wrapper::before{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.lessons-wrapper{
+  margin-top: -10px;
+  background-color: #239b76;
+  text-align: center;
+  height: 540px;
+  color: #fff;
+}
+
+.lesson-heading h2{
+  font-weight: normal;
+  color: #fff;
+  padding: 60px 0 30px 0;
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+/* .lesson-heading h2 span{
+  color: #1a7940;
+  font-weight: 700;
+} */
+
+.lesson{
+  border-radius: 4px;
+  padding-top: 10px;
+  float: left;
+  width: 24.5%;
+  margin-right: 5px;
+  height: 360px;
+}
+
+.lesson .fa{
+  margin-top: 10px;
+  font-size: 72px;
+}
+
+.lesson-icon{
+  margin-bottom: 20px;
+}
+
+.lesson-icon p{
+  opacity: 0.7;
+  width: 100%;
+  top: 90px;
+  left: auto;
+  color: #535c68;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.text-lesson{
+  font-size: 15px;
+  width: 80%;
+  margin: auto;
+  color: rgb(11, 6, 112);
+  opacity: 0.6;
+}
+
+.lesson-icon img{
+  height: 50px;
+  width: 40%;
+}
+
+.lesson-title:hover{
+  cursor: pointer;
+}
+
+
+/*MESSAGE*/
+.message-wrapper{
+  text-align: center;
+  padding-bottom: 600px;
+  margin-top: 40px;
+}
+
+.message-heading{
+  padding: 100px 0 30px 0;
+}
+
+.message-heading h2{
+  font-weight: normal;
+  color: #5f5d60;
+}
+.message-heading h3{
+  color: #5f5d60;
+}
+
+.cta-message{
+  display: inline-block;
+  padding: 15px 40px;
+  border-bottom: 7px solid #1a7940;
+  opacity: 0.8;
+  border-radius: 4px;
+  background-color: #5dca88;
+  color: #fff;
+  transition: 0.25s;
+}
+
+.cta-message:active{
+  border-bottom: none;
+  transform: translateY(7px);
+}
+
+footer{
+  line-height: 65px;
+  height: 65px;
+  border-top: 1px solid #eee;
+}
+
+
+.footer-text{
+  color: #b3aeb5;
+  font-size: 12px;
+}
